@@ -129,9 +129,16 @@ export default App
 const Header = styled.section`
   font-size: 1.5rem;
   text-align: center;
+  font-style: italic;
 
   h2 {
     color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.1rem #03dffc;
+  }
+
+  p {
+    color: #fff;
+    text-shadow: 0.07rem 0.07rem 0.07rem #03dffc;
   }
 `
 
@@ -145,7 +152,7 @@ const SlidersSection = styled.section`
 `
 const ColorBox = styled.section`
   height: 5rem;
-  width: 10rem;
+  width: 16rem;
   border: 0.5rem solid #000;
   margin: 0 auto;
   background-color: ${({ hue, saturation, lightness, alpha }) =>
@@ -154,6 +161,9 @@ const ColorBox = styled.section`
 const P = styled.p`
   font-size: 1.5rem;
   text-align: center;
+  margin: 1rem;
+  color: #fff;
+  text-shadow: 0.04rem 0.04rem 0.04rem #03dffc;
 `
 
 const RandomButton = styled.button`
@@ -163,13 +173,19 @@ const RandomButton = styled.button`
   border: 0.15rem solid #fff;
   letter-spacing: 0.2rem;
   color: #fff;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 0 0.8rem #03dffc;
+  -webkit-box-shadow: inset 0 0 0.8rem #03dffc;
+  box-shadow: inset 0 0 0.8rem #03dffc;
   transition: 0.3s ease;
 
   :hover {
     cursor: pointer;
     transform: translateY(-0.7rem);
     border-radius: 2rem;
-    box-shadow: 0.25rem 0.25rem 0.25rem #000;
+    box-shadow: 0 0.2rem 0.2rem #03dffc;
+  }
+  :focus {
+    outline: none;
   }
 `
