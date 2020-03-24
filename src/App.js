@@ -122,7 +122,10 @@ class App extends Component {
 }
 
 App.propTypes = {
-  title: PropTypes.string,
+  hue: PropTypes.number,
+  saturation: PropTypes.number,
+  lightness: PropTypes.number,
+  alpha: PropTypes.number,
 }
 
 export default App
@@ -134,6 +137,7 @@ const Header = styled.section`
   h2 {
     color: #fff;
     text-shadow: 0.1rem 0.1rem 0.1rem #03dffc;
+    display: relative;
   }
 
   p {
@@ -184,6 +188,7 @@ const RandomButton = styled.button`
     transform: translateY(-0.7rem);
     border-radius: 2rem;
     box-shadow: 0 0.2rem 0.2rem #03dffc;
+    text-shadow: 0.1rem 0.1rem 0.1rem #03dffc;
   }
   :focus {
     outline: none;

@@ -86,12 +86,49 @@ const Div = styled.div`
     height: 1rem;
     cursor: pointer;
     box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.2rem #0d0d0d;
-    background: linear-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    background: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      lime,
+      green,
+      turquoise,
+      cyan,
+      blue,
+      violet,
+      magenta,
+      crimson
+    );
     border-radius: 0.25rem;
     border: 0.02rem solid #010101;
   }
 
   input[type='range']:focus::-webkit-slider-runnable-track {
-    background: linear-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    background: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      lime,
+      green,
+      turquoise,
+      cyan,
+      blue,
+      violet,
+      magenta,
+      crimson
+    );
   }
 `
+// $red: red;
+// $orange: orange;
+// $yellow: yellow;
+// $lime: lime;
+// $green: green;
+// $Turquoise: turquoise;
+// $Cyan: cyan;
+// $Blue: blue;
+// $Violet: violet;
+// $Magenta: magenta;
+// $Crimson: crimson;
